@@ -9,21 +9,21 @@ option_list <- list(
   make_option(c("-e","--sigmaee"),type="character", default = "Sigma_EE.txt",
               help = "file containing sigma_ee (gene-covariance/co-expression) values"),
   make_option(c("-k","--K"),type="character", default = "opt",
-              help = "number of components to be extracted"),
-  make_option(c("-d","--dir"),type="character", default ="~/archie/",
-              help = "directory fore all the base code files"),
+              help = "number of components to be extracted [default %default]"),
+  make_option(c("-d","--dir"),type="character", default ="~/archie/codes/",
+              help = "directory fore all the base code files [default %default]"),
   make_option(c("-u","--precu"),type="integer", default =100,
-              help = "grid search parameter for snp-component"),
+              help = "grid search parameter for snp-component [default %default]"),
   make_option(c("-v","--precv"),type="integer", default =100,
-              help = "grid search parameter for gene-component"),
+              help = "grid search parameter for gene-component [default %default]"),
   make_option(c("-r","--decu"),type="integer", default =0,
-              help = "maximum intersect for snp-component"),
+              help = "maximum intersect for snp-component [default %default]"),
   make_option(c("-s","--decv"),type="integer", default =0,
-              help = "maximum intersect for gene-component"),
+              help = "maximum intersect for gene-component [default %default]"),
   make_option(c("-q", "--verbose"), type="character", default=FALSE,
-              help="Print extra output [default]"),
+              help="Print extra output [default %default]"),
   make_option(c("-o","--out"),type="character",default = "out",
-              help = "prefix of output rds file")
+              help = "prefix of output rds file [default %default]")
   
 )
 
