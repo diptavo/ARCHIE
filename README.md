@@ -83,6 +83,11 @@ To get the detailed options for ARCHIE use the following command:
 Rscript ~/archie/codes/run_archie.R --help
 
 ```
+# Results
+
+trans-association results from the summary statistics of [eQTLGen](https://www.eqtlgen.org/) analysis for 29 traits will be available shortly.
+
+
 # Questions
 Please direct any questions/suggestions/comments to diptavo21@jhu.edu
 
