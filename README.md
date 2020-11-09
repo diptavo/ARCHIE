@@ -23,7 +23,7 @@ Run ARCHIE using the following example command:
 Rscript ~/archie/codes/run_archie.R --sigmage ~/archie/files/sigmage.txt --sigmagg ~/archie/files/sigmagg.txt --sigmaee ~/archie/files/sigmaee.txt
 
 ```
-This will produce `out.rds`. `us` and `vs` in the output represent the selected SNPs mapped to corresponding selected genes. In the output below, note that SNPs 1 to 5 has been correctly mapped to genes 1 to 10 and SNPs 11 to 15 mapped to genes 11 to 20. ARCHIE usually numerically determines the number of sparse canonical correlation components to be extracted, however that is customizable as well.
+This will produce `out.rds`. 
 
 ```R
 > a1 = readRDS("out.rds");
@@ -76,6 +76,7 @@ head(a1$vs,20)
 [19,]    1    0
 [20,]    1    0
 ```
+`us` and `vs` in the output represent the selected SNPs mapped to corresponding selected genes (`1` indiciating selected, `0` indicating not selected). In the output, note that SNPs 1 to 5 has been correctly mapped to genes 1 to 10 and SNPs 11 to 15 mapped to genes 11 to 20. ARCHIE usually numerically determines the number of sparse canonical correlation components to be extracted, however that is customizable as well. `q` is the aggregated measure of association explained by the corresponding component. 
 # Detailed options
 
 To get the detailed options for ARCHIE use the following command:
